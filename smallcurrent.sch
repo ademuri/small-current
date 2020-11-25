@@ -86,7 +86,7 @@ U 1 1 5FB7D032
 P 3750 4200
 F 0 "D1" V 3789 4082 50  0000 R CNN
 F 1 "LED" V 3698 4082 50  0000 R CNN
-F 2 "LED_SMD:LED_0603_1608Metric" H 3750 4200 50  0001 C CNN
+F 2 "LED_THT:LED_D3.0mm" H 3750 4200 50  0001 C CNN
 F 3 "~" H 3750 4200 50  0001 C CNN
 	1    3750 4200
 	0    -1   -1   0   
@@ -457,7 +457,7 @@ U 1 1 5FBAC710
 P 4000 1750
 F 0 "R1" H 4070 1796 50  0000 L CNN
 F 1 "0R01 0.1%" H 4070 1705 50  0000 L CNN
-F 2 "Resistor_SMD:R_2512_6332Metric" V 3930 1750 50  0001 C CNN
+F 2 "snapeda:Y14870R01000B9R" V 3930 1750 50  0001 C CNN
 F 3 "~" H 4000 1750 50  0001 C CNN
 	1    4000 1750
 	1    0    0    -1  
@@ -883,7 +883,6 @@ F 3 "~" H 11000 3700 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	10750 1750 10700 1750
-Connection ~ 9750 1750
 $Comp
 L Connector:Conn_Coaxial BC1
 U 1 1 5FC1B261
@@ -899,9 +898,6 @@ Wire Wire Line
 	10550 2550 10700 2550
 Wire Wire Line
 	10700 2550 10700 1750
-Connection ~ 10700 1750
-Wire Wire Line
-	10700 1750 9750 1750
 Wire Wire Line
 	10800 3700 10350 3700
 Connection ~ 8850 3700
@@ -980,4 +976,70 @@ Wire Wire Line
 	7550 4050 7300 4050
 Wire Wire Line
 	3050 3600 5100 3600
+$Comp
+L Mechanical:MountingHole H1
+U 1 1 5FBF0127
+P 1800 5400
+F 0 "H1" H 1900 5446 50  0000 L CNN
+F 1 "MountingHole" H 1900 5355 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 1800 5400 50  0001 C CNN
+F 3 "~" H 1800 5400 50  0001 C CNN
+	1    1800 5400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H2
+U 1 1 5FBF1185
+P 1800 5600
+F 0 "H2" H 1900 5646 50  0000 L CNN
+F 1 "MountingHole" H 1900 5555 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 1800 5600 50  0001 C CNN
+F 3 "~" H 1800 5600 50  0001 C CNN
+	1    1800 5600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H3
+U 1 1 5FBF1405
+P 1800 5800
+F 0 "H3" H 1900 5846 50  0000 L CNN
+F 1 "MountingHole" H 1900 5755 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 1800 5800 50  0001 C CNN
+F 3 "~" H 1800 5800 50  0001 C CNN
+	1    1800 5800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H4
+U 1 1 5FBF1655
+P 1800 6000
+F 0 "H4" H 1900 6046 50  0000 L CNN
+F 1 "MountingHole" H 1900 5955 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 1800 6000 50  0001 C CNN
+F 3 "~" H 1800 6000 50  0001 C CNN
+	1    1800 6000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4000 2000 7200 2000
+Wire Wire Line
+	7200 2000 7200 4050
+Connection ~ 4000 2000
+$Comp
+L Device:R R8
+U 1 1 5FC22AB6
+P 10000 1750
+F 0 "R8" V 9793 1750 50  0000 C CNN
+F 1 "270R" V 9884 1750 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 9930 1750 50  0001 C CNN
+F 3 "~" H 10000 1750 50  0001 C CNN
+	1    10000 1750
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	9750 1750 9850 1750
+Connection ~ 9750 1750
+Wire Wire Line
+	10150 1750 10700 1750
+Connection ~ 10700 1750
 $EndSCHEMATC
